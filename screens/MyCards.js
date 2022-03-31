@@ -7,9 +7,10 @@ import {
 } from "react-native";
 import React from "react";
 import SwiperGradient from "../components/SwiperGradient";
+import ViewStatement from "../components/ViewStatement";
 import { LinearGradient } from "expo-linear-gradient";
-
 import Swiper from "react-native-swiper";
+
 const COLORS = { TextColor: "#FFF" };
 
 const ITEM1 = [
@@ -175,6 +176,9 @@ const MyCards = () => {
           <TouchableOpacity style={styles.Button}>
             <Text style={styles.ButtonText}>Transactions</Text>
           </TouchableOpacity>
+        </View>
+        <View style={{ alignItems: "center", justifyContent: "center" }}>
+          <ViewStatement />
         </View>
       </View>
     </ScrollView>
